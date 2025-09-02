@@ -271,3 +271,10 @@ border-top: 1px solid var(--color01);
   color: var(--color05);
   text-decoration: none;
 }
+
+#newsletter-message{
+    
+}
+.footer p {
+  font-size: 0.9rem; 
+}
