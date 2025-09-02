@@ -1,0 +1,273 @@
+:root { 
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color04);
+    line-height: 1;
+    font-stretch: 100%;
+
+    /* Farvekoder fra hjemmesiden */
+    --bg-color00: #fff;/*background-color*/
+    --bg-color01: #eee;/*background-color*/
+    --color00: #fff;
+    --color01: #ebebe3;
+    --color02: #d1d0d0;
+    --color03: #828282;
+    --color04: #0e0f11;/*text color*/
+    --color05: #efd17a;
+    --color06: #f2474b;
+    --color07: #6c757d;
+    --color08: #3e9f6e;
+    --color09: #2d3545;
+    --color10: #999999;
+    --color11: #eddba4;
+    --color12: #000000;
+}
+
+body {
+    background-color: var(--color00);
+    color: var(--color04);
+    font: 400 16px/20px Roboto,Arial,sans-serif;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+  
+}
+
+/* --- HEADER --- */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color00);
+    box-sizing: border-box;
+    border-bottom: 5px solid var(--color01);
+    width: 100%;
+}
+
+.container__header {
+    max-width: 1200px;       /* align med .main og end-menu */
+    margin: 0 auto;
+    padding: 0 2rem;         /* luft til sider */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top sektion: sekundær nav højre */
+.header__top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Logo fylder hele bredden af container */
+.header__logo {
+    display: flex;
+    align-items: center;
+    max-height: 200px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Sekundær nav (top-nav) */
+.nav--secondary .nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+     gap: 2rem; 
+}
+
+.nav--secondary .nav__item a {
+    text-decoration: none;
+    color: var(--color04);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Nederste sektion: primær nav venstre */
+.header__bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Primær nav (bund-nav) */
+.nav--primary .nav__list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+}
+
+.nav--primary .nav__item a {
+    font-family: tintin;
+    text-decoration: none;
+    color: var(--color04);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.item-container__kampagner {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+    flex: 0 1 200px;
+} 
+
+/*---TEKST INFO BOKS---*/
+
+container__info{
+background-color: var(--color01);
+}
+.info-txt-container {
+     position: relative;
+    z-index: 1;
+    background-color: var(--color05);
+    width: 100vw;
+    padding: 5rem 0;   
+    box-sizing: border-box;   /* padding tæller med i width */
+} 
+
+.container-txt {  
+    max-width: 1200px;
+    margin: 0 auto; /* Center container */
+    padding-left: 0 2rem; /* Placerer teksten til højre for billedet */
+   }
+
+
+.info-txt-container__img {
+    position: absolute; /* Gør billedet “flydende” oven på teksten */
+    top: -50px;         /* Juster hvor højt billedet skal være */
+    left: 0;           /* Placering mod højre */
+    width: 300px;       /* Billedets bredde */
+    z-index: 20;        /* Sørger for at billedet ligger over teksten */
+}
+
+.info-txt-container h2 {
+    font-family: tintin;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+   
+
+
+/* SØGEFELT */
+#fullscreen-search-header {
+    margin-top: 1rem;
+}
+#top-full-search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#fullsearchField {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+.end-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: var(--color00);
+}
+
+.end-menu__column {
+  flex: 1 1 200px;
+  padding: 0 1rem;
+}
+
+.end-menu__title {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.end-menu__list {
+  list-style: none;
+  padding: 0;
+  color: var(--color02);
+}
+
+.end-menu__item {
+  margin-bottom: 5px;
+
+  
+}
+.footer {
+    background-color: var(--bg-color05);
+}
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background-color: var(--color00);
+    color: var(--color09);
+    
+}  
+/*---FOOTER NYHEDBREV FORM POP UP---*/
+        .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* semi-transparent baggrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: var(--color00);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.footer__column {
+  margin-bottom: 5px;
+}
+.footer__bottom {
+border-top: 1px solid var(--color01);
+  background-color: var(--color04);
+  color: var(--color05);
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+.footer__bottom a {
+  color: var(--color05);
+  text-decoration: none;
+}
