@@ -1,3 +1,5 @@
+    // Tag selv opgave - Kopieret fra AI - ikke testet elller forstået/ Lotte
+
 const newsletterForm = document.getElementById('newsletter-form');
 const emailInput = document.getElementById('newsletter-email');
 const message = document.getElementById('newsletter-message');
