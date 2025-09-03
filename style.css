@@ -126,23 +126,25 @@ body {
     flex: 0 1 200px;
 } 
 
+
 /*---TEKST INFO BOKS---*/
 
 container__info{
 background-color: var(--color01);
+
 }
 .info-txt-container {
      position: relative;
     z-index: 1;
-    background-color: var(--color05);
+    background-color: var(--color00);
     width: 100vw;
+    max-width: 1200px;
     padding: 5rem 0;   
     box-sizing: border-box;   /* padding tæller med i width */
 } 
 
 .container-txt {  
-    max-width: 1200px;
-    margin: 0 auto; /* Center container */
+    
     padding-left: 0 2rem; /* Placerer teksten til højre for billedet */
    }
 

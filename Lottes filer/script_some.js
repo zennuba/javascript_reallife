@@ -4,3 +4,8 @@ socialLinks.forEach(link => {
     console.log("Bruger klikkede på:", link.href);
   });
 });
+
+
+
+
+
