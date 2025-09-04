@@ -125,6 +125,15 @@ body {
     padding: 2rem 0;
     flex: 0 1 200px;
 } 
+.item--kampagne-harry-potter img,
+.item--kampagne-tintin img {
+  transition: transform 0.3s;
+}
+
+.item--kampagne-harry-potter:hover img,
+.item--kampagne-tintin:hover img {
+  transform: scale(1.05);
+}
 
 
 /*---TEKST INFO BOKS---*/
@@ -166,7 +175,7 @@ background-color: var(--color01);
    
 
 
-/* SØGEFELT */
+/* SØGEFELT - Svend vil du tjekke*/
 #fullscreen-search-header {
     margin-top: 1rem;
 }
