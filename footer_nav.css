@@ -1,0 +1,31 @@
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: var(--color00);
+}
+
+.footer-nav__column {
+  flex: 1 1 200px;
+  padding: 0 1rem;
+}
+
+.footer-nav__title {
+  margin-bottom: 5rem;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.footer-nav__list {
+  list-style: none;
+  padding: 0;
+  color: var(--color02);
+}
+
+.footer-nav__item {
+  margin-bottom: 5px;
+
+}

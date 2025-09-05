@@ -1,0 +1,62 @@
+    /* JSON = JavaScript Object Notation. Bruges til at sende, modtage og opbevare data.
+        - Syntax er tæt på syntax for JavaScript objects.
+        Forskellen på js og json er:
+            - JSON er kun data, dvs ingen logik, så ingen funktioner eller variabler elller kommentarer tilladt
+            - Keys og strings SKAL bruge anførelsestegn " ", '' ikke tilladt
+            - Ingen trailing commas - Sidste element i et array eller objekt må ikke have et komma bagefter.
+
+        - JSON kan kun indeholde:
+            Objekter { ... }
+            Arrays [ ... ]
+            Strings "tekst"
+            Numbers 123
+            Boolean true/false
+            null
+
+            Det anbefales at man altid brugewr en JSON validator (fx jsonlint.com) til at validere data     
+    Konklusion: Brug JSON til data – og lad JS lave logikken = mere simpel kode og overskueligt
+    (kilder: jsonlint.com, https://www.w3schools.com/js/js_json.asp https://www.w3schools.com/css/css_navbar_horizontal.asp 
+))
+
+                Når JSON loades med fetch, husk .then(response => response.json()).
+    
+
+    
+        - skal hentes ind via JavaScript "fetch"
+    KOMMENTAR SLUT */
+
+
+/* JS kode med data fra JSON - forstå processen*/
+
+    1. fetch("footerData.json")
+        - Starter et HTTP-kald til filen footerData.json.
+        - Returnerer et Promise – altså noget, der vil blive til en værdi i fremtiden, når filen er hentet.
+      -   
+
+        2. .then(response => response.json())
+            - Når fetch er færdig, får du et response-objekt.
+            - response.json() er en metode, der læser indholdet og konverterer det til et JavaScript-objekt.
+            - response.json() returnerer også et Promise, fordi JSON-parsing kan tage lidt tid.
+
+    3. .then(data => { ... })
+        - Når JSON’en er parsed færdig, kommer det rene data ind i data variablen.
+        - Her kan du nu arbejde med arrays/objekter direkte, fx loope igennem footer-sektionerne.
+
+fetch()                             ---> Promise1 (venter på fil) laver en HTTP GET-forespørgsel, returnerer et Promise.
+  |
+  v
+.then(response => response.json())  ---> Promise2 (venter på parsing) parser tekstfilen til JS-objekt, returnerer et nyt Promise.
+  |
+  v
+.then(data => { ... })              ---> Nu har du data som JS-objekt/array - dataen er nu klar, du kan bruge arrays/objekter i JS.
+
+
+
+ORD: 
+
+Promise: en fremtidig værdi
+Hensigt: Bruges til at håndtere asynkrone operationer, fx hente data fra server.    
+    Tilstande af et Promise:
+        Pending – arbejdet er ikke færdigt endnu
+        Fulfilled – arbejdet lykkedes, og resultatet er klar
+        Rejected – arbejdet mislykkedes, fx fejl ved netværk

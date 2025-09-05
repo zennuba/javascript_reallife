@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faraos Webshop</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script_nav__primary.js" defer></script>
-    <script src="script-kampagne-hovereffekt.js" defer></script>
+    <link rel="stylesheet" href="footer_nav.css">
+    <script src="footer-nav.js" defer></script>
+    <script src="scipt.js" defer></script>
+    
 </head>
 <body>
 
@@ -29,6 +31,8 @@
             </nav>  
         </div>
     <div class="header__bottom">
+
+    <!-- SVEND LAVER MENUEN -->
         <nav class="nav nav--primary" aria-label="Primær navigation">
             <ul class="nav__list nav__list--primary">
                 <li class="nav__item nav__item--primary"><a href="https://www.faraos.dk/">Comics</a></li>
@@ -72,8 +76,11 @@
                     
             <div class="item item--kampagne-tintin">
                 <img src="FC-images/desktop_kampagne_tintin.jpg" alt="Tintin">
+                
             </div>        
         </div>
+
+
         <div class="container__info">
             <div class="info-txt-container">
                 <img class="info-txt-container__img" src="FC-images/intro_bugatti.png" alt="Intro bugatti">
@@ -88,112 +95,53 @@
             </div>
         </div>
     </main>
-<div class="end-menu">
-  <div class="end-menu__column">
-    <h3 class="end-menu__title">Butikker</h3>
-    <ul class="end-menu__list">
-      <li class="end-menu__item">København Comics & Potter</li>
-      <li class="end-menu__item">København Bræt- & Rollespil</li>
-      <li class="end-menu__item">København Figurspil</li>
-      <li class="end-menu__item">København Kortspil</li>
-      <li class="end-menu__item">København Manga</li>
-      <li class="end-menu__item">København Udklædning & Liverollespil</li>
-      <li class="end-menu__item">København Merchandise</li>
-      <li class="end-menu__item">Odense</li>
-      <li class="end-menu__item">Aarhus Games</li>
-      <li class="end-menu__item">Aarhus Comics</li>
-      <li class="end-menu__item">Lyngby Games</li>
-      <li class="end-menu__item">Lyngby Comics</li>
-      <li class="end-menu__item">Åbningstider</li>
-      <li class="end-menu__item">Faraos Cigarer Online</li>
-      <li class="end-menu__item">Aktiviteter</li>
-      <li class="end-menu__item">Kalender</li>
-    </ul>
-  </div>
-
-  <div class="end-menu__column">
-    <h3 class="end-menu__title">Kundeservice</h3>
-    <ul class="end-menu__list">  
-      <li class="end-menu__item"></li>
-      <li class="end-menu__item">Kontakt os</li>
-      <li class="end-menu__item">Fragt & Levering</li>
-      <li class="end-menu__item">Betaling</li>
-      <li class="end-menu__item">Reklamation og Returnering</li>
-      <li class="end-menu__item">Fortrolighed</li>
-      <li class="end-menu__item">Handelsbetingelser</li>
-      <li class="end-menu__item">EAN Kunder</li>
-      <li class="end-menu__item">FAQ</li>
-      <li class="end-menu__item">Antikvariske tegneserier</li>
-      <li class="end-menu__item">Magic Købsliste</li>
-      <li class="end-menu__item">Brugt Lego og Tintin biler</li>
-      <li class="end-menu__item">Brugte rollespil</li>
-      <li class="end-menu__item">Dungeons & Dragons Karakterark</li>
-      <li class="end-menu__item">Drager & Dæmoner Karakterark</li>
-      <li class="end-menu__item">Sådan handler du hos os</li>
-      <li class="end-menu__item">VAT refund</li>
-      <li class="end-menu__item">Refundering af Gavekort</li>
-    </ul>
-  </div>
-
-  <div class="end-menu__column">
-    <h3 class="end-menu__title">Services</h3>
-    <ul class="end-menu__list">
-      <li class="end-menu__item">Klub Faraos</li>
-      <li class="end-menu__item">Min Profil</li>
-      <li class="end-menu__item">Min Ønskeliste</li>
-      <li class="end-menu__item">Mine Favoritter</li>
-      <li class="end-menu__item">Min Søgeliste</li>
-      <li class="end-menu__item">Mine Ordrer</li>
-      <li class="end-menu__item">Nyhedsbrev</li>
-
-
-    
-    </ul>
-  </div>
-
-  <div class="end-menu__column">
-    <h3 class="end-menu__title">Om Faraos</h3>
-    <ul class="end-menu__list">
-      <li class="end-menu__item">Om Faraos</li>
-      <li class="end-menu__item">Job & Praktik</li>
-      <li class="end-menu__item">Forlaget Faraos Cigarer</li>
-      <li class="end-menu__item">Signeringer i Faraos Cigarer</li>
-      <li class="end-menu__item">Kollega til webshop / lager søges</li>
-      <li class="end-menu__item">Sæsonmedarbejdere – Taastrup</li>
-      <li class="end-menu__item">Ungarbejdere til lager i Tåstrup</li>
-    </ul>
-  </div>
-</div>
+</body>
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer>
+        <!-- Footer menu Lotte -->
+        <div class="footer-nav" id="footer-nav"></div>
+
+
         <div class="footer__container">
-            <div class="footer__section> 
+            <div class="footer__section footer__section--newsletter">
+                <h3>Tilmeld dig nyhedsbrevet</h3>
+                    <p>Få nyheder, tilbud og konkurrencer direkte i din indbakke.</p>
+                        <!-- FORM NEWSLETTER -->                    
+                        <form id="newsletter-form">
+                             <input type="email" id="newsletter-email" placeholder= "Indtast din email" required/>
+                                <button type="submit">Tilmeld</button>
+                        </form>
+                    
+                <div class="newsletter-form">
+                    <p id="newsletter-message" style="display:none; color:green; margin-top:1rem;"></p>
+                        <div id="newsletter-popup" class="popup" style="display:none;">
+                            <div class="popup-content">
+                                <span id="popup-close" class="popup-close">&times;</span>
+                                <p>Tak for din tilmelding til nyhedsbrevet!</p>
+                            </div>
+                        </div>
+                </div>        
+            </div> 
 
-<!-- her skal der indsættes en nyhedsmail form / Lotte -->
-
-
-
-
-
-
-
-                <div class="footer__section footer__section--socials">
-                    <h3>Følg os</h3>
+            <div class="footer__section footer__section--socials">
+                <h3>Følg os</h3>
                     <p>Alt det nye om konkurrencer, events, tilbud og produkter.</p>
                     <p>Følg os i dag, så er du altid opdateret.</p>
-                    <div class="footer__socials">                        
-                        <a href="https://www.facebook.com/faraoscigarer" target="_blank">Facebook</a>
-                        <a href="https://twitter.com/faraoscigarer" target="_blank">Twitter</a>
-                        <a href="https://www.instagram.com/faraoscigarer/" target="_blank">Instagram</a>
-                        </div>  
-                </div>
-            </div>
-        </div>        
-            <div class="footer__bottom">
+                
+                <div class="footer__socials">                        
+                    <a href="https://www.facebook.com/faraoscigarer" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/faraoscigarer" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/faraoscigarer/" target="_blank">Instagram</a>
+                </div>  
+            </div>   
+        </div> 
+    </footer> 
+ 
+    <div class="footer__bottom">
                 <p>© Faraos Cigarer Aps – Skindergade 27, 1159 København K
-                Tlf: 33 32 22 11 – <a href="mailto:faraos@faraos.dk">faraos@faraos.dk</a></p>
-            </div>
-    </footer>
+                Tlf: 33 32 22 11 – <a href="mailto:faraos@faraos.dk">faraos@faraos.dk</a></p>     
+    </div>    
+    
    
 </body>
 </html>
