@@ -1,5 +1,5 @@
 
-
+/* Lavet af ANA */
 
 /* OFFERS */
 .offers {
@@ -42,8 +42,8 @@
 
 .slideshow__image {
   display: none;
-  width: 100%;
-  height: 100%;
+  /*width: 100%;
+  height: 100%;*/
   object-fit: cover;
   border-radius: 6px;
 }
