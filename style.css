@@ -207,7 +207,7 @@ background-color: var(--color01);
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  background-color: var(--color00);
+  background-color: var(--color02);
 }
 
 .footer-nav__column {
@@ -229,6 +229,7 @@ background-color: var(--color01);
 
 .footer-nav__item {
   margin-bottom: 5px;
+}
 
 .footer-nav__item a {
   color: var(--color02);
@@ -241,7 +242,7 @@ background-color: var(--color01);
   text-decoration: underline;
 }
   
-}
+
 .footer {
     background-color: var(--bg-color05);
 }

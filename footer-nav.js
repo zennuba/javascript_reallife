@@ -5,9 +5,7 @@
 
   fetch("footer-nav.json")    
     .then(response => response.json())
-      .then(data => {
-        console.log(data);
-      
+      .then(data => {   
 
     const footerNav = document.getElementById("footer-nav"); 
    
@@ -42,7 +40,7 @@
         }); 
 
       column.appendChild(ul);
-       footerNavNav.appendChild(column);
+       footerNav.appendChild(column);
       }
       }) 
             
