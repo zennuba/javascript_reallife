@@ -89,28 +89,54 @@ body {
     text-transform: uppercase;
 }
 
-/* Nederste sektion: primær nav venstre */
-.header__bottom {
+/*Hovedmenu - Lavet af Svend*/
+#menu {
+    position: relative;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* Primær nav (bund-nav) */
-.nav--primary .nav__list {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
+.dropdown__content {
+    display: none;
+    justify-content: space-between;
+    margin: 2% 20%;
+    z-index: 1;
 }
 
-.nav--primary .nav__item a {
-    font-family: tintin;
+.dropbtn {
+    border: none;
+    padding: 16px;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: rgb(255, 204, 0);
+}
+
+.dropdown__content a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-decoration: none;
-    color: var(--color04);
-    font-weight: 500;
-    text-transform: uppercase;
+    color: black;
+    padding: 16px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown__content a:hover, .dropdown__content a:focus {
+    color: rgb(255, 204, 0);
+}
+
+.show {
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 .slideshow-container {
