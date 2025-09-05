@@ -112,6 +112,53 @@ body {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .slide img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .dots {
+    text-align: center;
+    position: relative;
+    top: -30px;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #333;
+  }
+
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
 .main {
     max-width: 1200px;
     margin: 0 auto;
