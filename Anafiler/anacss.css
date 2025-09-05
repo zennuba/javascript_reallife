@@ -1,0 +1,116 @@
+
+
+
+/* OFFERS */
+.offers {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offers__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* PRODUKTKORT - MASKE & MAND */
+.maske, .mand {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px; /* Ens højde for begge kort */
+}
+
+/* SLIDESHOW */
+.maske__slideshow, .mand__slideshow {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  height: 250px; /* Ens højde på slideshow */
+}
+
+.slideshow__images, .mandslideshow__images {
+  position: relative;
+}
+
+.slideshow__image {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.slideshow__image.active {
+  display: block;
+}
+
+/* SLIDESHOW KNAPPER */
+.slideshow__button, .mandslideshow__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.slideshow__button--tilbage, .mandslideshow__button--tilbage {
+  left: 5px;
+}
+
+.slideshow__button--frem, .mandslideshow__button--frem {
+  right: 5px;
+}
+
+.slideshow__button:hover, .mandslideshow__button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* PRODUKTNAVN OG PRIS */
+.maske__name, .mand__name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.maske__price, .mand__price {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.maske__price--new, .mand__price--new {
+  font-weight: bold;
+  color: #d00;
+  margin-right: 0.5rem;
+}
+
+.maske__price--old, .mand__price--old {
+  text-decoration: line-through;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* KØB KNAPPER */
+.buybutton__button, .mandbutton__button {
+  background: #009900;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buybutton__button:hover, .mandbutton__button:hover {
+  background: #007700;
+}
