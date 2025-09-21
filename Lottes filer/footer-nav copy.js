@@ -1,7 +1,7 @@
 
 
     /*
-    1. hent data fra dokument "footerData.json" via fetch 
+    1. hent data fra dokument "footer-nav.json" via fetch 
 
   fetch("footer-nav.json")    
     .then(response => response.json())
